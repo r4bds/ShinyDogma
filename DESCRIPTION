@@ -15,7 +15,6 @@ Imports:
     config,
     ggplot2,
     golem,
-    magrittr,
     shiny
 Suggests: 
     knitr,
