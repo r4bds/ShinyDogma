@@ -1,0 +1,20 @@
+---
+title: "ShinyDogma"
+output: rmarkdown::pdf_document
+vignette: >
+  %\VignetteIndexEntry{ShinyDogma}
+  %\VignetteEngine{knitr::rmarkdown}
+  %\VignetteEncoding{UTF-8}
+---
+
+```{r, include = FALSE}
+knitr::opts_chunk$set(
+  collapse = TRUE,
+  comment = "#>"
+)
+```
+
+```{r setup}
+library(ShinyDogma)
+```
+## Doing stuff
