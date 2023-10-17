@@ -41,7 +41,7 @@ mod_abundance_server <- function(id){
       if(input$peptide == ""){
         NULL
       } else{
-        input$peptide %>%
+        input$peptide |>
           centralDogma::plot_abundance() +
           ggplot2::theme(legend.position = "none")
         }
