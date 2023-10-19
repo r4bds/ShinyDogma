@@ -10,12 +10,11 @@ The goal of ShinyDogma is to …
 
 ## Installation
 
-You can install the development version of ShinyDogma from
-[GitHub](https://github.com/) with:
+You can install the development version of ShinyDogma from GitHub with:
 
 ``` r
 # install.packages("devtools")
-devtools::install_github("shdam/ShinyDogma")
+devtools::install_github("r4bds/ShinyDogma")
 ```
 
 ## Example
