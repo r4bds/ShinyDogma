@@ -25,7 +25,7 @@ mod_dna_expression_ui <- function(id){
         label = "Generate random DNA", style = "margin-top: 18px;"
       ))
     ),
-    shiny::verbatimTextOutput(outputId = ns("peptide")) |>
+    shiny::verbatimTextOutput(outputId = ns("peptide")) %>%
       shiny::tagAppendAttributes(style = "white-space: pre-wrap;")
 
   )
@@ -78,10 +78,10 @@ mod_dna_expression_server <- function(id){
       } else if(nchar(input$DNA) < 3){
         NULL
       } else{
-        input$DNA |>
-          toupper() |>
-          centralDogma::transcribe() |>
-          centralDogma::codon_split() |>
+        input$DNA %>%
+          toupper() %>%
+          centralDogma::transcribe() %>%
+          centralDogma::codon_split() %>%
           centralDogma::translate()
       }
     })
